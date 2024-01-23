@@ -9,6 +9,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { Separator } from "@/components/ui/separator";
 
 export default function home() {
   return (
@@ -49,6 +50,7 @@ export default function home() {
             <FaLinkedin />
           </a>
         </div>
+        <Separator />
         <p className="techStack">
           My main tech stacks are
           <ul>
