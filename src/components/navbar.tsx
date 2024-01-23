@@ -1,45 +1,39 @@
 import Link from "next/link";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
-  Menubar,
-  MenubarContent,
-  MenubarItem,
-  MenubarMenu,
-  MenubarSeparator,
-  MenubarShortcut,
-  MenubarTrigger,
-} from "@/components/ui/menubar";
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export default function Navbar() {
   return (
     <nav>
       <div className="avatar-container">
-        <Avatar>
-          <AvatarImage src="https://avatars.githubusercontent.com/u/108056780?s=96&v=4" />
-          <AvatarFallback>CN</AvatarFallback>
-        </Avatar>
+        <Link href="/">
+          <Avatar>
+            <AvatarImage src="https://avatars.githubusercontent.com/u/108056780?s=96&v=4" />
+            <AvatarFallback>CN</AvatarFallback>
+          </Avatar>
+        </Link>
       </div>
-      <Menubar>
-        <MenubarMenu>
-          <ul>
-            <MenubarTrigger>
-              <li>
-                <Link href="/">Home</Link>
-              </li>
-            </MenubarTrigger>
-            <MenubarTrigger>
-              <li>
-                <Link href="/Experience">Experience</Link>
-              </li>
-            </MenubarTrigger>
-            <MenubarTrigger>
-              <li>
-                <Link href="/contact">Contact</Link>
-              </li>
-            </MenubarTrigger>
-          </ul>
-        </MenubarMenu>
-      </Menubar>
+      <DropdownMenu>
+        <DropdownMenuTrigger>Menu</DropdownMenuTrigger>
+        <DropdownMenuContent>
+          <DropdownMenuItem>
+            <Link href="/">Home</Link>
+          </DropdownMenuItem>
+          <DropdownMenuItem>
+            <Link href="/experience">Experience</Link>
+          </DropdownMenuItem>
+          <DropdownMenuItem>
+            <Link href="/contact">Contact</Link>
+          </DropdownMenuItem>
+        </DropdownMenuContent>
+      </DropdownMenu>
     </nav>
   );
 }
