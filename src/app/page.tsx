@@ -8,6 +8,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function home() {
   return (
@@ -28,6 +29,26 @@ export default function home() {
           technologies. I'm passionate about creating innovative solutions and
           eager to tackle challenging problems.
         </p>
+        <div className="flex gap-2">
+          <a
+            target="_blank"
+            href="https://github.com/dwk601"
+            rel="noopener noreferrer"
+            aria-label="Github"
+            className="rounded p-3 text-xl hover:bg-accent hover:text-accent-foreground"
+          >
+            <FaGithub />
+          </a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/dwk1/"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            className="rounded p-3 text-xl hover:bg-accent hover:text-accent-foreground"
+          >
+            <FaLinkedin />
+          </a>
+        </div>
         <p className="techStack">
           My main tech stacks are
           <ul>
