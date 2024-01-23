@@ -62,6 +62,12 @@
 main, nav {
   @apply max-w-6xl mx-auto my-14 px-4;
 }
+nav {
+  @apply flex justify-between items-center;
+}
+nav ul {
+  @apply flex gap-4;
+}
 p {
   @apply mt-4 text-lg leading-relaxed;
 }
