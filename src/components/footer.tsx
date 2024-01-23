@@ -5,10 +5,6 @@ export default function Footer() {
     <footer>
       <p>© {new Date().getFullYear()} Dongwook Kim. All rights reserved.</p>
       <div>
-        <Link href="/privacy-policy">Privacy Policy</Link>
-        <Link href="/terms-of-service">Terms of Service</Link>
-      </div>
-      <div>
         <a
           href="https://www.linkedin.com/in/dwk1/"
           target="_blank"
@@ -24,7 +20,6 @@ export default function Footer() {
           GitHub
         </a>
       </div>
-      <p>Contact: your-email@example.com</p>
     </footer>
   );
 }
