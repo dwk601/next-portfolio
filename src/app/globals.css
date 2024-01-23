@@ -74,3 +74,21 @@ h2 {
 footer {
   @apply bg-background text-foreground py-6 px-4 mt-12 text-center;
 }
+.title {
+  margin-top: 20px;
+  font-size: 1.5em; /* Adjust as needed */
+}
+
+.intro {
+  margin-top: 40px;
+  font-size: 2em; /* Adjust as needed */
+}
+
+.description {
+  margin-top: 20px;
+  font-size: 1.5em; /* Adjust as needed */
+}
+
+.techStack {
+  margin-top: 20px;
+}
