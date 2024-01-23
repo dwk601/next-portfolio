@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer>
-      <p>© {new Date().getFullYear()} Your Name. All rights reserved.</p>
+      <p>© {new Date().getFullYear()} Dongwook Kim. All rights reserved.</p>
       <div>
         <Link href="/privacy-policy">Privacy Policy</Link>
         <Link href="/terms-of-service">Terms of Service</Link>
