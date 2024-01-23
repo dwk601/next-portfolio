@@ -60,10 +60,10 @@
 }
 
 main, nav {
-  @apply max-w-6xl mx-auto my-12;
+  @apply max-w-6xl mx-auto my-14 px-4;
 }
 p {
-  @apply mt-2;
+  @apply mt-4 text-lg leading-relaxed;
 }
 h1 {
   @apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;
@@ -74,21 +74,6 @@ h2 {
 footer {
   @apply bg-background text-foreground py-6 px-4 mt-12 text-center;
 }
-.title {
-  margin-top: 20px;
-  font-size: 1.5em; /* Adjust as needed */
-}
-
-.intro {
-  margin-top: 40px;
-  font-size: 2em; /* Adjust as needed */
-}
-
-.description {
-  margin-top: 20px;
-  font-size: 1.5em; /* Adjust as needed */
-}
-
-.techStack {
-  margin-top: 20px;
+.dialog-container {
+  @apply flex justify-between flex-wrap gap-5 sm:m-4 md:m-8 lg:m-12;
 }

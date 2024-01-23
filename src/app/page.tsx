@@ -1,4 +1,13 @@
 import Head from "next/head";
+import { Card, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 export default function home() {
   return (
@@ -20,11 +29,57 @@ export default function home() {
         <p className="techStack">
           My main tech stacks are:
           <ul>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-            // Add more as needed
+            <div className="dialog-container">
+              <Dialog>
+                <DialogTrigger>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Data Science</CardTitle>
+                    </CardHeader>
+                  </Card>
+                </DialogTrigger>
+                <DialogContent>
+                  <li>Python</li>
+                  <li>SQL</li>
+                  <li>Machine Learning</li>
+                  <li>APIs</li>
+                  <li>PowerBi</li>
+                  <li>Tableau</li>
+                </DialogContent>
+              </Dialog>
+              <Dialog>
+                <DialogTrigger>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Web Development</CardTitle>
+                    </CardHeader>
+                  </Card>
+                </DialogTrigger>
+                <DialogContent>
+                  <li>Vue3</li>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>Next.js</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </DialogContent>
+              </Dialog>
+              <Dialog>
+                <DialogTrigger>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Others</CardTitle>
+                    </CardHeader>
+                  </Card>
+                </DialogTrigger>
+                <DialogContent>
+                  <li>Kotlin</li>
+                  <li>Android Studio</li>
+                  <li>Git</li>
+                  <li>GitHub</li>
+                </DialogContent>
+              </Dialog>
+            </div>
           </ul>
         </p>
       </main>
