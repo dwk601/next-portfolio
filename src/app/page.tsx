@@ -19,7 +19,9 @@ export default function home() {
       </Head>
 
       <main>
-        <h2 className="title">Welcome to my Website!</h2>
+        <h2 className="title font-light text-muted-foreground">
+          Welcome to my Website!
+        </h2>
         <p className="intro">Hi, I'm Dongwook Kim.</p>
         <p className="description">
           As a student, I'm continuously exploring and learning cutting-edge
@@ -27,7 +29,7 @@ export default function home() {
           eager to tackle challenging problems.
         </p>
         <p className="techStack">
-          My main tech stacks are:
+          My main tech stacks are
           <ul>
             <div className="dialog-container">
               <Dialog>
