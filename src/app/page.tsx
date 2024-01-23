@@ -68,6 +68,9 @@ export default function home() {
                   <li>SQL</li>
                   <li>Machine Learning</li>
                   <li>APIs</li>
+                  <li>LangChain</li>
+                  <li>Embedding</li>
+                  <li>Vector</li>
                   <li>PowerBi</li>
                   <li>Tableau</li>
                 </DialogContent>
@@ -87,6 +90,8 @@ export default function home() {
                   <li>Next.js</li>
                   <li>HTML</li>
                   <li>CSS</li>
+                  <li>Shadcn UI</li>
+                  <li>Tailwind CSS</li>
                 </DialogContent>
               </Dialog>
               <Dialog>
@@ -99,6 +104,7 @@ export default function home() {
                 </DialogTrigger>
                 <DialogContent>
                   <li>Kotlin</li>
+                  <li>C++</li>
                   <li>Android Studio</li>
                   <li>Git</li>
                   <li>GitHub</li>
