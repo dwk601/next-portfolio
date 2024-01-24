@@ -17,7 +17,7 @@ export default function home() {
         <h2 className="title font-light text-muted-foreground">
           Welcome to my Website!
         </h2>
-        <p className="intro">Hi, I'm Dongwook Kim.</p>
+        <p className="intro">Hi, I'm Dongwook Kim. 🇰🇷</p>
         <p className="description">
           As a student, I'm continuously exploring and learning cutting-edge
           technologies. I'm passionate about creating innovative solutions and
@@ -102,6 +102,7 @@ export default function home() {
                   <li>Android Studio</li>
                   <li>Git</li>
                   <li>GitHub</li>
+                  <li>Linux</li>
                 </DialogContent>
               </Dialog>
             </div>
