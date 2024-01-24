@@ -21,7 +21,7 @@ export default function Navbar() {
           </Avatar>
         </Link>
       </div>
-      <div>
+      <div className="toggle-container">
         <ModeToggle />
       </div>
       <DropdownMenu>
