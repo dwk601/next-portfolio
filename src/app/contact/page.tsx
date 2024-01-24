@@ -53,6 +53,21 @@ export default function Contact() {
                 <a href="https://github.com/dwk601" id="github">
                   dwk601
                 </a>
+                <div className="flex flex-col space-y-1.5">
+                  <Label
+                    htmlFor="resume"
+                    className="font-light text-muted-foreground"
+                  >
+                    Resume
+                  </Label>
+                  <a
+                    href="https://uvu365-my.sharepoint.com/:b:/g/personal/10829539_uvu_edu1/Ed2auIkxwSZFmHfeZk3kzYYBZaVyohxSyzaR7qA1n8vqSg?e=w6ncfn"
+                    download
+                    id="resume"
+                  >
+                    Download my Resume
+                  </a>
+                </div>
               </div>
             </div>
           </form>
