@@ -17,7 +17,7 @@ export default function Navbar() {
         <Link href="/">
           <Avatar>
             <AvatarImage src="https://avatars.githubusercontent.com/u/108056780?s=96&v=4" />
-            <AvatarFallback>CN</AvatarFallback>
+            <AvatarFallback>DK</AvatarFallback>
           </Avatar>
         </Link>
       </div>
