@@ -99,7 +99,7 @@ export default function home() {
                 <DialogTrigger>
                   <Card>
                     <CardHeader>
-                      <CardTitle>Others</CardTitle>
+                      <CardTitle>And More</CardTitle>
                     </CardHeader>
                   </Card>
                 </DialogTrigger>
