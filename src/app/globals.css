@@ -61,6 +61,9 @@
 main, nav {
   @apply max-w-6xl mx-auto my-14 px-4;
 }
+body {
+  @apply antialiased;
+}
 nav {
   @apply flex justify-between items-center;
 }
