@@ -1,4 +1,3 @@
-import Head from "next/head";
 import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Dialog,
@@ -14,12 +13,6 @@ import { Separator } from "@/components/ui/separator";
 export default function home() {
   return (
     <div>
-      <Head>
-        <title>Homepage</title>
-        <meta name="description" content="Welcome to my portfolio" />
-        <link rel="icon" href="/icon.svg" />
-      </Head>
-
       <main>
         <h2 className="title font-light text-muted-foreground">
           Welcome to my Website!
