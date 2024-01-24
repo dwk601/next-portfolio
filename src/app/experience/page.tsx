@@ -39,12 +39,14 @@ export default function Work() {
                         projects with organizational goals
                       </li>
                       <li>
-                        Used XML, Vue3, HTML, and CSS to participate in the
-                        redesigning of the UVU student website
+                        Used <strong>XML, Vue3, HTML, and CSS </strong>to
+                        participate in the redesigning of the{" "}
+                        <strong>UVU student website</strong>
                       </li>
                       <li>
-                        Ensured efficient and scalable solutions through
-                        meticulous project execution.
+                        Ensured <strong>efficient</strong> and{" "}
+                        <strong>scalable </strong>solutions through meticulous
+                        project execution.
                       </li>
                     </ul>
                   </DrawerDescription>
@@ -73,22 +75,20 @@ export default function Work() {
                     </p>
                     <ul>
                       <li>
-                        Utilized Python and SQL for data analysis and reporting,
-                        extracting valuable insights from complex datasets,
-                        resulting in a 15% increase in data accuracy and a 20%
-                        improvement in decision-making processes.
+                        Utilized <strong>ETL tools</strong> and{" "}
+                        <strong>SQL</strong> for data warehousing tasks,
+                        resulting in a 20% increase in data processing
+                        efficiency.
                       </li>
                       <li>
-                        Developed interactive dashboards using Power BI,
-                        enhancing data accessibility and visualization for
-                        stakeholders, leading to a 15% reduction in time spent
-                        on data analysis and reporting.
+                        Developed and maintained <strong>data pipelines</strong>{" "}
+                        using <strong>Python</strong>, improving data flow and
+                        reducing data processing time by 15%.
                       </li>
                       <li>
-                        Utilized Jira for efficient project management, ensuring
-                        adherence to timelines and seamless coordination of
-                        tasks, resulting in a 5% increase in project completion
-                        rate and a 10% improvement in team productivity.
+                        Implemented data quality checks using{" "}
+                        <strong>Data Quality Frameworks</strong>, ensuring high
+                        data accuracy and reliability.
                       </li>
                     </ul>
                   </DrawerDescription>
@@ -115,18 +115,20 @@ export default function Work() {
                     </p>
                     <ul>
                       <li>
-                        Utilized Python and SQL for data analysis, focusing on
+                        Utilized <strong>Python</strong> and{" "}
+                        <strong>SQL</strong> for data analysis, focusing on
                         student success metrics, resulting in a 20% increase in
                         available data for analysis and informed
                         decision-making.
                       </li>
                       <li>
-                        Developed a dynamic live dashboard using Tableau,
-                        integrating new datasets to enhance data visualization
-                        and facilitate data-driven decision-making processes.
-                        This updated dashboard allowed students and faculty to
-                        easily access and analyze the data, resulting in a 15%
-                        improvement in data accessibility and user satisfaction.
+                        Developed a dynamic live dashboard using{" "}
+                        <strong>Tableau</strong>, integrating new datasets to
+                        enhance data visualization and facilitate data-driven
+                        decision-making processes. This updated dashboard
+                        allowed students and faculty to easily access and
+                        analyze the data, resulting in a improvement in data
+                        accessibility and user satisfaction.
                       </li>
                     </ul>
                   </DrawerDescription>

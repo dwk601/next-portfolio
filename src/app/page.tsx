@@ -86,6 +86,7 @@ export default function home() {
                 <DialogContent>
                   <li>Vue3</li>
                   <li>JavaScript</li>
+                  <li>TypeScript</li>
                   <li>React</li>
                   <li>Next.js</li>
                   <li>HTML</li>
