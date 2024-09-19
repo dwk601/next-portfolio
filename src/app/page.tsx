@@ -4,9 +4,9 @@ import Project from "@/components/project";
 import Contact from "@/components/contact";
 import Skill from "@/components/skill";
 
-export default function home() {
+export default function HomePage() {
   return (
-    <div className=" min-h-screen">
+    <div className="min-h-screen">
       <main className="mt-16">
         <section id="home">
           <Home />
