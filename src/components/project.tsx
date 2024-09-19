@@ -9,6 +9,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import portfolioImage from "@/public/images/portfolio.png";
+import myuvu from "@/public/images/myuvu.png";
 
 const projects = [
   {
@@ -16,14 +17,14 @@ const projects = [
     title: "Portfolio Website",
     description: "It is this website you are currently viewing.",
     imageUrl: portfolioImage,
-    link: "",
+    link: "https://github.com/dwk601/next-portfolio/tree/main",
   },
   {
     id: 2,
     title: "UVU Student Website",
     description: "Redesign of the UVU student website.",
-    imageUrl: "/placeholder.svg?height=100&width=200",
-    link: "#project-2",
+    imageUrl: myuvu,
+    link: "https://my.uvu.edu/student/events",
   },
   {
     id: 3,
@@ -60,7 +61,7 @@ export default function Project() {
                   height={100}
                 />
                 <Button className="w-full mt-4" asChild>
-                  <Link href={project.link}>View Project</Link>
+                  <Link href={project.link} target="_blank" rel="noopener noreferrer">View Project</Link>
                 </Button>
               </CardContent>
             </Card>
