@@ -1,7 +1,32 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import { useEffect } from "react";
 
 export default function Home() {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.substring(1);
+      if (hash) {
+        scrollToSection(hash);
+      }
+    };
+
+    window.addEventListener("hashchange", handleHashChange);
+    handleHashChange(); // Scroll to the section if there's a hash in the URL on initial load
+
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, []);
+
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
       <div className="container px-4 md:px-6">
@@ -16,11 +41,11 @@ export default function Home() {
             </p>
           </div>
           <div className="space-x-4">
-            <Button asChild>
-              <Link href="#contact">Contact Me</Link>
+            <Button onClick={() => scrollToSection("contact")}>
+              Contact Me
             </Button>
-            <Button asChild variant="outline">
-              <Link href="#projects">View Projects</Link>
+            <Button variant="outline" onClick={() => scrollToSection("projects")}>
+              View Projects
             </Button>
           </div>
         </div>
