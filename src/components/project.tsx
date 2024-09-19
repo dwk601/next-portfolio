@@ -10,6 +10,7 @@ import Image from "next/image";
 import Link from "next/link";
 import portfolioImage from "@/public/images/portfolio.png";
 import myuvu from "@/public/images/myuvu.png";
+import athlos from "@/public/images/athlos.png";
 
 const projects = [
   {
@@ -28,10 +29,10 @@ const projects = [
   },
   {
     id: 3,
-    title: "Project 3",
-    description: "A short description of the project",
-    imageUrl: "/placeholder.svg?height=100&width=200",
-    link: "#project-3",
+    title: "Athlos",
+    description: "A sports group management web application.",
+    imageUrl: athlos,
+    link: "https://github.com/dwk601/athlos-svelte",
   },
 ];
 
