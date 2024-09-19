@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Github, Linkedin, Mail } from "lucide-react";
 import Experience from "@/components/experience";
 import Hero from "@/components/hero";
+import Project from "@/components/project";
 
 export default function home() {
   return (
@@ -12,33 +13,7 @@ export default function home() {
       <main className="flex-1">
         <Hero />
         <Experience />
-        <section id="projects" className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
-          <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">My Projects</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[1, 2, 3].map((project) => (
-                <Card key={project}>
-                  <CardHeader>
-                    <CardTitle>Project {project}</CardTitle>
-                    <CardDescription>A short description of the project</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <Image
-                      src={`/placeholder.svg?height=100&width=200`}
-                      alt={`Project ${project}`}
-                      className="w-full h-[200px] object-cover rounded-md"
-                      width={200}
-                      height={100}
-                    />
-                    <Button className="w-full mt-4" asChild>
-                      <Link href={`#project-${project}`}>View Project</Link>
-                    </Button>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
+        <Project/>
 
         <section id="skills" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
