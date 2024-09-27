@@ -18,7 +18,7 @@ const projects = [
     title: "Portfolio Website",
     description: "It is this website you are currently viewing.",
     imageUrl: portfolioImage,
-    link: "https://github.com/dwk601/next-portfolio/tree/main",
+    link: "https://github.com/dwk601/next-portfolio",
   },
   {
     id: 2,
