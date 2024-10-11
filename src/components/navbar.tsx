@@ -42,8 +42,8 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  return (
-    <nav className="fixed top-0 left-0 right-0 bg-background border-b z-50 transition-colors duration-200">
+    return (
+    <nav className="fixed top-0 left-0 right-0 bg-gray-100 dark:bg-gray-800 border-b z-50 transition-colors duration-200">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Button
