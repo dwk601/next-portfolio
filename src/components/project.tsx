@@ -11,6 +11,7 @@ import Link from "next/link";
 import portfolioImage from "@/public/images/portfolio.png";
 import myuvu from "@/public/images/myuvu.png";
 import athlos from "@/public/images/athlos.png";
+import my_svelte from "@/public/images/my-svelte-home.png";
 
 const projects = [
   {
@@ -22,13 +23,20 @@ const projects = [
   },
   {
     id: 2,
+    title: "First Svelte Fullstack App",
+    description: "A fullstack application using SvelteKit",
+    imageUrl: my_svelte,
+    link: "https://my-svelte-delta.vercel.app/",
+  },
+  {
+    id: 3,
     title: "UVU Student Website",
     description: "Redesign of the UVU student website.",
     imageUrl: myuvu,
     link: "https://my.uvu.edu/student/events",
   },
   {
-    id: 3,
+    id: 4,
     title: "Athlos",
     description: "A sports group management web application.",
     imageUrl: athlos,
