@@ -1,4 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-  
+
+@layer components {
+  .section-bg {
+    @apply backdrop-blur-sm bg-white/30 dark:bg-gray-800/30;
+  }
+}

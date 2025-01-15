@@ -67,7 +67,7 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800"
+      className="w-full py-12 md:py-24 lg:py-32 section-bg"
     >
       <div className="container px-4 md:px-6">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">
@@ -75,7 +75,7 @@ export default function Experience() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {experiences.map((experience, index) => (
-            <Card key={index}>
+            <Card key={index} className="bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm">
               <CardHeader>
                 <CardTitle>{experience.title}</CardTitle>
                 <CardDescription>{experience.company}</CardDescription>
