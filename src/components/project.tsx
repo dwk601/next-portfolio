@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
-import portfolioImage from "@/public/images/portfolio.png";
+import ng_tracker from "@/public/images/ng_tracker.png";
 import myuvu from "@/public/images/myuvu.png";
 import athlos from "@/public/images/athlos.png";
 import my_svelte from "@/public/images/my-svelte-home.png";
@@ -16,10 +16,10 @@ import my_svelte from "@/public/images/my-svelte-home.png";
 const projects = [
   {
     id: 1,
-    title: "Portfolio Website",
-    description: "It is this website you are currently viewing.",
-    imageUrl: portfolioImage,
-    link: "https://github.com/dwk601/next-portfolio",
+    title: "NG Tracker",
+    description: "A real world friendly soccer team statistic tracker",
+    imageUrl: ng_tracker,
+    link: "https://ng-tracker.vercel.app/",
   },
   {
     id: 2,
