@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/footer";
 import { ThemeProvider } from "@/components/theme-provider";
-import { ModeToggle } from "@/components/toggle";
 import { WavyBackground } from "@/components/ui/wavy-background";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -24,7 +23,6 @@ export default function RootLayout({
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
-          enableSystem
           disableTransitionOnChange
         >
           <div className="fixed inset-0 z-[-1]">
@@ -37,9 +35,6 @@ export default function RootLayout({
             />
           </div>
           <div className="relative z-10 min-h-screen">
-            <div className="fixed top-4 right-4 z-50">
-              <ModeToggle />
-            </div>
             {children}
             <Footer />
           </div>
