@@ -75,29 +75,42 @@ export default function Experience() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {experiences.map((experience, index) => (
-            <Card key={index} className="bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm">
-              <CardHeader>
-                <CardTitle>{experience.title}</CardTitle>
-                <CardDescription>{experience.company}</CardDescription>
-                <CardDescription>{experience.period}</CardDescription>
+            <Card 
+              key={index} 
+              className="bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm hover:shadow-lg transition-all duration-300 border border-gray-200 dark:border-gray-700"
+            >
+              <CardHeader className="space-y-1">
+                <CardTitle className="text-xl font-bold">{experience.title}</CardTitle>
+                <CardDescription className="text-base font-medium text-primary">
+                  {experience.company}
+                </CardDescription>
+                <CardDescription className="text-sm text-muted-foreground">
+                  {experience.period}
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <Dialog>
                   <DialogTrigger asChild>
-                    <Button className="w-full mt-4" variant="outline">
+                    <Button 
+                      className="w-full mt-4 hover:scale-[1.02] transition-transform" 
+                      variant="outline"
+                    >
                       {experience.buttonText}
                     </Button>
                   </DialogTrigger>
-                  <DialogContent className="sm:max-w-[425px]">
-                    <DialogHeader>
-                      <DialogTitle>{experience.title}</DialogTitle>
-                      <DialogDescription>
-                        <p className="text-sm text-muted-foreground">
-                          {experience.period}
-                        </p>
-                        <ul className="list-disc pl-5 space-y-2">
+                  <DialogContent className="sm:max-w-[525px] bg-white dark:bg-gray-800 border-none shadow-2xl">
+                    <DialogHeader className="space-y-4">
+                      <div>
+                        <DialogTitle className="text-2xl font-bold mb-2">
+                          {experience.title}
+                        </DialogTitle>
+                        <p className="text-primary font-medium">{experience.company}</p>
+                        <p className="text-sm text-muted-foreground">{experience.period}</p>
+                      </div>
+                      <DialogDescription className="bg-gray-50 dark:bg-gray-900/50 p-4 rounded-lg">
+                        <ul className="list-disc pl-5 space-y-3 text-foreground">
                           {experience.fullDescription.map((desc, i) => (
-                            <li key={i}>{desc}</li>
+                            <li key={i} className="text-base">{desc}</li>
                           ))}
                         </ul>
                       </DialogDescription>
